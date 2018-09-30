@@ -5,11 +5,11 @@ This repository is an adjunct to the "Ten Simple Rules for Reproducible Research
 The example notebooks demonstrate some of rules. 
 
 ## Example 1
-This example demonstrates a 3-step workflow for predicting the protein fold type using a Machine Learning approach.
+This example demonstrates a 4-step workflow for predicting the protein fold type using a Machine Learning approach.
 
-You can launch the top level notebook directly in your web browser: [example1/0-Workflow.ipynb](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example1%2F0-Workflow.ipynb).
+You can launch the top level notebook directly in your web browser: [0-Workflow.ipynb](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example1%2F0-Workflow.ipynb).
 
-Then follow the steps in the notebook to run the 3 steps of the workflow.
+Then follow the steps in the notebook to run the 4 steps of the workflow.
 
 ## Example 2
 
