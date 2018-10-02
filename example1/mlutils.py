@@ -3,7 +3,7 @@ import numpy as np
 import itertools
 
 
-def plot_confusion_matrix2(cm, classes,
+def plot_confusion_matrix(cm, classes,
                           normalize=False,
                           title='Confusion matrix',
                           cmap=plt.cm.Blues):
