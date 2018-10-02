@@ -1,6 +1,6 @@
-# Ten Simple Rules for Reproducible Research with Jupyter Notebooks
+# Ten Simple Rules for Reproducible Research in Jupyter Notebooks
 
-This repository is an adjunct to the "Ten Simple Rules for Reproducible Research with Jupyter Notebook" paper [ref].
+This repository is a supplement to the "Ten Simple Rules for Reproducible Research in Jupyter Notebook" paper [ref].
 
 The example notebooks demonstrate some of rules. 
 
@@ -9,7 +9,7 @@ This example demonstrates a reproducible 4-step workflow for predicting a protei
 
 ---
 
-**Rule 8: Prepare Your Notebooks to Be Read, Run, and Explored.** The nbviewer links provide to a non-interactive preview of notebooks and ![Binder](https://mybinder.org/badge.svg) buttons launch
+**Rule 8: Prepare Your Notebooks to Be Read, Run, and Explored.** The nbviewer links below provide to a non-interactive preview of notebooks and ![Binder](https://mybinder.org/badge.svg) buttons launch
 notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.org/)) server (may be slow!). All notebooks can also be launched directly from the links in the 0-Workflow.ipynb top-level notebook.
 
 ---
@@ -34,6 +34,6 @@ Example 2 goes here ...
 
 
 ## How do I run Notebooks from this Site?
-The Launch Binder links on this page launch notebooks in your web browser without software installation using Binder ([mybinder.org](https://mybinder.org/)), an experimental platform for reproducible research (The Binder servers may be slow or not available intermittently).
+The Launch Binder links on this page launch notebooks in your web browser without software installation using Binder ([mybinder.org](https://mybinder.org/)), an experimental platform for reproducible research (The Binder servers may be slow or unavailable intermittently).
 
 After you click on a launch link above, you see a spinning Binder logo. Wait until the notebook launches (this may take a few minutes). Then click the Run ">>" button to execute the cells in the notebook.
