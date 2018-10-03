@@ -9,7 +9,7 @@ This example demonstrates a reproducible 4-step workflow for predicting a protei
 
 ---
 
-**Rule 8: Prepare Your Notebooks to Be Read, Run, and Explored.** The nbviewer links below provide to a non-interactive preview of notebooks and ![Binder](https://mybinder.org/badge.svg) buttons launch
+**Rule 8: Expect Your Notebooks to Be Read, Run, and Explored.** The nbviewer links below provide to a non-interactive preview of notebooks and ![Binder](https://mybinder.org/badge.svg) buttons launch
 notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.org/)) server (may be slow!). All notebooks can also be launched directly from the links in the [0-Workflow.ipynb](./example1/0-Workflow.ipynb) top-level notebook.
 
 ---
@@ -24,7 +24,7 @@ notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.
 
 ---
 
-**Rule 7: Share Your Data and Explain How to Use It.** To enable reproducibility, we provide a example1/data directory with all data required to run the workflow. A description of the data with download location and download date is [available](./example1/data/Datasets.md).
+**Rule 7: Share and Explain Your Data.** To enable reproducibility, we provide a example1/data directory with all data required to run the workflow. A description of the data with download location and download date is [available](./example1/data/Datasets.md).
 
 ---
 
