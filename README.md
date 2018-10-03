@@ -30,10 +30,10 @@ notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.
 
 ## Example 2
 
-This example demonstrates a reproducible 2-step workflow for simulating a phylogenetic tree and sequences.
+---
 
-
-## How do I run Notebooks from this Site?
-The Launch Binder links on this page launch notebooks in your web browser without software installation using Binder ([mybinder.org](https://mybinder.org/)), an experimental platform for reproducible research (The Binder servers may be slow or unavailable intermittently).
-
-After you click on a launch link above, you see a spinning Binder logo. Wait until the notebook launches (this may take a few minutes). Then click the Run ">>" button to execute the cells in the notebook.
+| Nbviewer | Jupyter Notebook | Jupyter Lab | PDF |
+| ---      | --               | ---         | --- |
+| [0-Workflow.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F0-Workflow.ipynb) | pdf |
+| [1-SimulateTree.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/1-SimulateTree.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F1-SimulateTree.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F1-SimulateTree.ipynb) | pdf |
+| [2-SimulateSequences.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/2-SimulateSequences.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F2-SimulateSequences.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F2-SimulateSequences.ipynb) | pdf |
