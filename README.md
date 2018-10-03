@@ -34,6 +34,11 @@ This example demonstrates a reproducible 2-step workflow for simulating a phylog
 
 ---
 
+**Rule 8: Prepare Your Notebooks to Be Read, Run, and Explored.** The nbviewer links below provide to a non-interactive preview of notebooks and ![Binder](https://mybinder.org/badge.svg) buttons launch
+notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.org/)) server (may be slow!). All notebooks can also be launched directly from the links in the 0-Workflow.ipynb top-level notebook.
+
+---
+
 | Nbviewer | Jupyter Notebook | Jupyter Lab | HTML |
 | ---      | --               | ---         | ---  |
 | [0-Workflow.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F0-Workflow.ipynb) | [HTML](./example2/0-Workflow.ipynb) |

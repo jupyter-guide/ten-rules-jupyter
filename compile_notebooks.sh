@@ -8,5 +8,5 @@ for d in example*; do
             jupyter nbconvert --log-level=ERROR --to $o $f
         done
     done
-    cd ..
+    cd ..; echo ""
 done
