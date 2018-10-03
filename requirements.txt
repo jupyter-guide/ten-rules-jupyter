@@ -4,3 +4,6 @@ pandas==0.23.4
 ipywidgets==7.4.0
 scikit-learn==0.20.0
 watermark==1.6.1
+treeswift==1.0.96
+seaborn==0.9.0
+pyvolve==0.8.8
