@@ -30,7 +30,7 @@ notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.
 
 ## Example 2
 
-Example 2 goes here ...
+This example demonstrates a reproducible 2-step workflow for simulating a phylogenetic tree and sequences.
 
 
 ## How do I run Notebooks from this Site?
