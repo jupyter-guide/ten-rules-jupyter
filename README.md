@@ -30,6 +30,8 @@ notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.
 
 ## Example 2
 
+This example demonstrates a reproducible 2-step workflow for simulating a phylogenetic tree and sequences.
+
 ---
 
 | Nbviewer | Jupyter Notebook | Jupyter Lab | PDF |
