@@ -15,7 +15,7 @@ notebooks in your web browser using the Binder ([mybinder.org](https://mybinder.
 ---
 
 | Nbviewer | Jupyter Notebook | Jupyter Lab | HTML |
-| ---      | --               | ---         | --- |
+| ---      | --               | ---         | ---  |
 | [0-Workflow.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example1/0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example1%2F0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example1%2F0-Workflow.ipynb) | [HTML](./example1/0-Workflow.ipynb) |
 | [1-CreateDataset.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example1/1-CreateDataset.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example1%2F1-CreateDataset.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example1%2F1-CreateDataset.ipynb) | [HTML](./example1/1-CreateDataset.ipynb) |
 | [2-CalculateFeatures.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example1/2-CalculateFeatures.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example1%2F2-CalculateFeatures.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example1%2F2-CalculateFeatures.ipynb) | [HTML](./example1/2-CalculateFeatures.ipynb) |
@@ -34,8 +34,8 @@ This example demonstrates a reproducible 2-step workflow for simulating a phylog
 
 ---
 
-| Nbviewer | Jupyter Notebook | Jupyter Lab | PDF |
-| ---      | --               | ---         | --- |
+| Nbviewer | Jupyter Notebook | Jupyter Lab | HTML |
+| ---      | --               | ---         | ---  |
 | [0-Workflow.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F0-Workflow.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F0-Workflow.ipynb) | [HTML](./example2/0-Workflow.ipynb) |
 | [1-SimulateTree.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/1-SimulateTree.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F1-SimulateTree.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F1-SimulateTree.ipynb) | [HTML](./example2/1-SimulateTree.ipynb) |
 | [2-SimulateSequences.ipynb](https://nbviewer.jupyter.org/github/jupyter-guide/ten-rules-jupyter/blob/master/example2/2-SimulateSequences.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?filepath=example2%2F2-SimulateSequences.ipynb) | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-guide/ten-rules-jupyter/master?urlpath=lab/tree/example2%2F2-SimulateSequences.ipynb) | [HTML](./example2/2-SimulateSequences.ipynb) |
