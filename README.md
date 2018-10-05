@@ -1,4 +1,5 @@
 # Ten Simple Rules for Reproducible Research in Jupyter Notebooks
+https://travis-ci.com/jupyter-guide/ten-rules-jupyter.svg?branch=master
 
 This repository is a supplement to the "Ten Simple Rules for Reproducible Research in Jupyter Notebook" paper [ref].
 
