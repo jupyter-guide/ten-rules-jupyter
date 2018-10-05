@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-Dataset">Create Dataset<a class="anchor-link" href="#Create-Dataset">&#182;</a></h1><p>This notebook extracts from the Protein Data Bank information about the secondary structure of proteins. The ultimate goal is to assign a fold classification for a set of representative proteins.</p>
+<h1 id="Create-Dataset">Create Dataset<a class="anchor-link" href="#Create-Dataset">&#182;</a></h1><p>This notebook extracts from the Protein Data Bank information about the secondary structure of proteins. The ultimate goal is to assign a fold classification from a protein sequence.</p>
 
 </div>
 </div>
@@ -12416,12 +12416,12 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Classify-Sequences-by-Secondary-Structure-Content">Classify Sequences by Secondary Structure Content<a class="anchor-link" href="#Classify-Sequences-by-Secondary-Structure-Content">&#182;</a></h2><p>Next we classify each protein chain into one of four classes. We use a threshold of 25% to define a predominant class.</p>
 <ul>
-<li>alpha: predominantly alpha (&gt;=25%)</li>
-<li>beta: predominantly beta (&gt;=25%)</li>
-<li>alpha+beta: significant alpha (&gt;=25%) and beta (&gt;=25%)</li>
+<li>alpha: predominantly alpha (&gt; 25%)</li>
+<li>beta: predominantly beta (&gt; 25%)</li>
+<li>alpha+beta: significant alpha (&gt; 25%) and beta (&gt; 25%)</li>
 <li>other: cases that do not fit into the 3 classes above </li>
 </ul>
-<p>Protein chains in the <em>other</em> class will be ignored in the subsequent analysis.</p>
+<p>Protein chains in the <strong>other</strong> class will be ignored in the subsequent analysis.</p>
 
 </div>
 </div>
@@ -12431,17 +12431,17 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">protein_fold_class</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">minThreshold</span><span class="p">,</span> <span class="n">maxThreshold</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">protein_fold_class</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">min_threshold</span><span class="p">,</span> <span class="n">max_threshold</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns fold classification:</span>
 <span class="sd">    &quot;alpha&quot;, &quot;beta&quot;, &quot;alpha+beta&quot;, and &quot;other&quot; based upon the </span>
 <span class="sd">    fraction of alpha and beta.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&gt;</span> <span class="n">maxThreshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&lt;</span> <span class="n">minThreshold</span><span class="p">:</span>                                
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&gt;</span> <span class="n">max_threshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&lt;</span> <span class="n">min_threshold</span><span class="p">:</span>                                
         <span class="k">return</span> <span class="s2">&quot;alpha&quot;</span>                                                                        
-    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&gt;</span> <span class="n">maxThreshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&lt;</span> <span class="n">minThreshold</span><span class="p">:</span>                              
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&gt;</span> <span class="n">max_threshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&lt;</span> <span class="n">min_threshold</span><span class="p">:</span>                              
         <span class="k">return</span> <span class="s2">&quot;beta&quot;</span>                                                                         
-    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&gt;</span> <span class="n">maxThreshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&gt;</span> <span class="n">maxThreshold</span><span class="p">:</span>                              
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">alpha</span> <span class="o">&gt;</span> <span class="n">max_threshold</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">beta</span> <span class="o">&gt;</span> <span class="n">max_threshold</span><span class="p">:</span>                              
         <span class="k">return</span> <span class="s2">&quot;alpha+beta&quot;</span>                                                                   
     <span class="k">else</span><span class="p">:</span>                                                                                     
         <span class="k">return</span> <span class="s2">&quot;other&quot;</span>
@@ -12458,7 +12458,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># assign protein fold class</span>
-<span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">protein_fold_class</span><span class="p">,</span> <span class="n">minThreshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">maxThreshold</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">protein_fold_class</span><span class="p">,</span> <span class="n">min_threshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">max_threshold</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># exclude protein chains without a dominant classification from further analysis.</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;other&#39;</span><span class="p">]</span>
