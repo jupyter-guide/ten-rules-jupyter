@@ -14,3 +14,4 @@ def _exec_notebook(path):
 def test():
     _exec_notebook('./example1/0-Workflow.ipynb')
     _exec_notebook('./example2/0-Workflow.ipynb')
+    _exec_notebook('./example1/Error.ipynb')
