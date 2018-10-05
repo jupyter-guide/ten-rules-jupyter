@@ -11783,12 +11783,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>The notebooks in this directory demonstrate the "Ten Rules for Reproducible Research in Jupyter Notebooks". Throughout the notebooks we refer to some the rules we applied.</strong></p>
+<p><strong>The notebooks in this directory demonstrate and apply the "Ten Rules for Reproducible Research in Jupyter Notebooks". Throughout the notebooks we refer to some the rules we applied.</strong></p>
 <p><strong>For example, this notebook demonstrates:</strong></p>
 <hr>
-<p><strong>Rule 1: Tell a Story for an Audience.</strong> This notebook was developed for biologists to learn how to apply a simple machine learning model to protein sequences.</p>
+<p><strong>Rule 1: Tell a Story for an Audience.</strong> This notebook was developed to learn how to apply a simple machine learning model to predict protein features based on protein sequences.</p>
 <p><strong>Rule 3: Build a Pipeline.</strong> This notebook describes the entire workflow from data preparation, feature calculation, model fitting, to prediction. The modularity makes it easy to replace one of the steps, for example, use a different method to calculate features or apply a different machine learning model.</p>
-<p><strong>Rule 5: Use Cell, Section adn Notebook Divisions to Make Steps Clear.</strong> We broke the workflow into separate notebooks and use this top-level notebook to explain and orchestrate the workflow.</p>
+<p><strong>Rule 5: Use Cell, Section and Notebook Divisions to Make Steps Clear.</strong> We broke the workflow into separate notebooks and use this top-level notebook to explain and organize the workflow.</p>
 <hr>
 
 </div>
@@ -11806,7 +11806,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Protein chains fold in regular patterns. Secondary structure describes the geometry of segments of a protein chain. The most common secondary structure elements are</p>
+<p>Proteins have four different levels of structure – primary, secondary, tertiary and quaternary. Secondary structure describes the geometry of segments of a protein chain. The most common secondary structure elements are:</p>
 <ul>
 <li>Alpha helices</li>
 <li>Beta sheets</li>
@@ -11819,7 +11819,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can classify proteins into three major fold classes based on their predominant secondary structure content</p>
+<p>We can classify proteins into three major fold classes based on their predominant secondary structure content:</p>
 <ul>
 <li>alpha: contains predominantly alpha helices</li>
 <li>beta: contains predominantly beta sheets</li>
@@ -11833,7 +11833,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Goal">Goal<a class="anchor-link" href="#Goal">&#182;</a></h2><p>This notebook demonstrates how to create a reproducible record to create a machine learning model. We train a simple model to predict the fold class of a protein given its protein sequence using a representative set of 3D structures from the Protein Data Bank.</p>
+<h2 id="Goal">Goal<a class="anchor-link" href="#Goal">&#182;</a></h2><p>This notebook demonstrates how to create a reproducible record using a machine learning model. We train the model to predict the fold class of a protein given its amino acid sequence using a representative set of 3D structures from the Protein Data Bank.</p>
 <p><strong>Run the following notebooks and explore how we applied the Ten Simple Rules.</strong></p>
 
 </div>
@@ -11887,7 +11887,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Protein sequences cannot be directly used for machine learning. Here use the Word2vec method to calculate a fixed-sized feature vector for each protein sequence.</p>
+<p>Protein sequences cannot be directly used for machine learning. Here we use the Word2vec method to calculate a fixed-sized feature vector for each protein sequence.</p>
 <p>Run the following notebook to calculate feature vectors.</p>
 
 </div>
