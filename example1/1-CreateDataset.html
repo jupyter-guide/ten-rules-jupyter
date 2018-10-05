@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-Dataset">Create Dataset<a class="anchor-link" href="#Create-Dataset">&#182;</a></h1><p>This notebook extracts protein secondary structure information from the Protein Data Bank for a set of representative protein chains and assigns a fold classification.</p>
+<h1 id="Create-Dataset">Create Dataset<a class="anchor-link" href="#Create-Dataset">&#182;</a></h1><p>This notebook extracts from the Protein Data Bank information about the secondary structure of proteins. The ultimate goal is to assign a fold classification for a set of representative proteins.</p>
 
 </div>
 </div>
@@ -11826,7 +11826,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Read-Representative-Set-of-Protein-Chains">Read Representative Set of Protein Chains<a class="anchor-link" href="#Read-Representative-Set-of-Protein-Chains">&#182;</a></h2><p>Protein chains in the Protein Data Bank (PDB) are redundant. For example, there are more than 300 structures of hemoglobin in the PDB. To reduce biases in our analysis, we use a representative set of protein chains, i.e., a set of protein chains with minimal sequence identity among its members. For this analysis we downloaded a non-redundant set from the <a href="http://dunbrack.fccc.edu/PISCES.php">PISCES website</a> with a maximum of 25% sequence identity and an X-ray resolution of &lt;= 3.0 &#197;.</p>
+<h2 id="Read-a-Representative-Set-of-Protein-Chains">Read a Representative Set of Protein Chains<a class="anchor-link" href="#Read-a-Representative-Set-of-Protein-Chains">&#182;</a></h2><p>Protein sequences in the Protein Data Bank (PDB) are redundant. For example, there are more than 300 structures of hemoglobin in the PDB. To reduce biases in our analysis, we use a representative set of protein chains, i.e., a set of protein chains with minimal sequence identity among its members. For this analysis we downloaded a non-redundant set from the <a href="http://dunbrack.fccc.edu/PISCES.php">PISCES website</a> with a maximum of 25% sequence identity and an X-ray resolution of &lt;= 3.0 &#197;.</p>
 <p>Wang G, Dunbrack RL Jr (2005) PISCES: recent improvements to a PDB sequence culling server, Nucleic Acids Res. 33, W94-8. <a href="https://doi.org/10.1093/nar/gki402">doi: 10.1093/nar/gki402</a></p>
 
 </div>
@@ -11956,7 +11956,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Read-Protein-Sequence-and-Secondary-Structure-Data">Read Protein Sequence and Secondary Structure Data<a class="anchor-link" href="#Read-Protein-Sequence-and-Secondary-Structure-Data">&#182;</a></h2><p>Protein secondary structure is most commonly assigned with the DSSP method.</p>
+<h2 id="Read-Protein-Sequence-and-Secondary-Structure-Data">Read Protein Sequence and Secondary Structure Data<a class="anchor-link" href="#Read-Protein-Sequence-and-Secondary-Structure-Data">&#182;</a></h2><p>Secondary structure of proteins is most commonly assigned with the DSSP method.</p>
 <p>Kabsch W, Sander C (1983) Dictionary of protein secondary structure: Pattern recognition of hydrogen‐bonded and geometrical features. Biopolymers 22, 2577–637. <a href="https://doi.org/10.1002/bip.360221211">doi 0.1002/bip.360221211</a></p>
 <p>DSSP defines <a href="https://en.wikipedia.org/wiki/Protein_secondary_structure">8 classes of secondary structure</a>:</p>
 <table>
@@ -12000,8 +12000,8 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.rcsb.org">RCSB Protein Data Bank</a> provides protein sequence and DSSP secondary structure assignments. The method below reads a local copy of this file and returns the data as a Pandas dataframe.</p>
-<p>The <strong>secondary_structure</strong> string below is the secondary strucuture assignment for each amino acid residue in the <strong>sequence</strong>.</p>
+<p>The <a href="https://www.rcsb.org">RCSB Protein Data Bank</a> provides protein sequences and DSSP secondary structure assignments. The method below reads a local copy of this file and returns the data as a Pandas dataframe.</p>
+<p>The <strong>secondary_structure</strong> string below is the secondary structure assignment for each amino acid residue in the <strong>sequence</strong>.</p>
 
 </div>
 </div>
@@ -12414,7 +12414,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Classify-Chains-by-Secondary-Structure-Content">Classify Chains by Secondary Structure Content<a class="anchor-link" href="#Classify-Chains-by-Secondary-Structure-Content">&#182;</a></h2><p>Next we classify each protein chain into one of four classes. We use a threshold of 25% to define a predominant class.</p>
+<h2 id="Classify-Sequences-by-Secondary-Structure-Content">Classify Sequences by Secondary Structure Content<a class="anchor-link" href="#Classify-Sequences-by-Secondary-Structure-Content">&#182;</a></h2><p>Next we classify each protein chain into one of four classes. We use a threshold of 25% to define a predominant class.</p>
 <ul>
 <li>alpha: predominantly alpha (&gt;=25%)</li>
 <li>beta: predominantly beta (&gt;=25%)</li>
@@ -12457,7 +12457,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">protein_fold_class</span><span class="p">,</span> <span class="n">minThreshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">maxThreshold</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># assign protein fold class</span>
+<span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">protein_fold_class</span><span class="p">,</span> <span class="n">minThreshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">maxThreshold</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># exclude protein chains without a dominant classification from further analysis.</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">value_col</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;other&#39;</span><span class="p">]</span>
