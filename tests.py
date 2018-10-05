@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import subprocess
 import tempfile
 
@@ -13,5 +14,14 @@ def _exec_notebook(path):
 
 def test():
     _exec_notebook('./example1/0-Workflow.ipynb')
+    _exec_notebook('./example1/1-CreateDataset.ipynb')
+    _exec_notebook('./example1/2-CalculateFeatures.ipynb')
+    _exec_notebook('./example1/3-FitModel.ipynb')
+    _exec_notebook('./example1/4-Predict.ipynb')
     _exec_notebook('./example2/0-Workflow.ipynb')
-    _exec_notebook('./example1/Error.ipynb')
+    _exec_notebook('./example2/1-SimulateTree.ipynb')
+    _exec_notebook('./example2/2-SimulateSequences.ipynb')
+
+
+if __name__ == '__main__':
+    test()
