@@ -11967,7 +11967,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Split-dataset-into-a-training-and-test-set">Split dataset into a training and test set<a class="anchor-link" href="#Split-dataset-into-a-training-and-test-set">&#182;</a></h2>
+<h2 id="Split-dataset-into-a-training-set-and-a-test-set">Split dataset into a training set and a test set<a class="anchor-link" href="#Split-dataset-into-a-training-set-and-a-test-set">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12073,7 +12073,7 @@ Name: foldClass, dtype: int64
 var element = $('#f05043d6-ccd2-48f2-9e69-0c9264813300');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "74da08556c454ff6b56a1a92e2771090", "version_major": 2, "version_minor": 0}
+{"model_id": "3c60c6fc2644436ebf8b9b092e6f8612", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12139,7 +12139,7 @@ var element = $('#f05043d6-ccd2-48f2-9e69-0c9264813300');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Make-prediction-for-test-set">Make prediction for test set<a class="anchor-link" href="#Make-prediction-for-test-set">&#182;</a></h2>
+<h2 id="Make-prediction-for-the-test-set">Make prediction for the test set<a class="anchor-link" href="#Make-prediction-for-the-test-set">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12161,7 +12161,7 @@ var element = $('#f05043d6-ccd2-48f2-9e69-0c9264813300');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Calculate-metrics-for-test-set">Calculate metrics for test set<a class="anchor-link" href="#Calculate-metrics-for-test-set">&#182;</a></h2>
+<h2 id="Calculate-metrics-for-the-test-set">Calculate metrics for the test set<a class="anchor-link" href="#Calculate-metrics-for-the-test-set">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12265,10 +12265,10 @@ weighted avg       0.78      0.77      0.77      1343
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h2><p>Three classification methods: SVM, Logistic Regression, and Neural Network perform about the same on this dataset. We have not optimized any parameters. We leave this as an excerise for the reader.</p>
+<h2 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h2><p>The three classification methods: SVM, Logistic Regression, and Neural Network perform about the same on the test dataset. We have not optimized any parameters. We leave this as an excercise for the reader.</p>
 <p>For all three methods, the prediction of the mixed class: alpha+beta has the lowest precision and recall.</p>
 <p><strong>Limitations of the Model</strong></p>
-<p>The feature vectors are created by summing ProtVectors for all 3-grams of a protein sequence and this process averages individual contributions. This may contribute to the lower performance for the alpha+beta class where alpha and beta related features are averaged. In addition, the beta class is underrepresented.</p>
+<p>The feature vectors are created by summing ProtVectors for all 3-grams of a protein sequence and this process averages individual contributions. This step may contribute to the lower performance for the alpha+beta class, because alpha and beta related features are averaged together. In addition, the beta class is underrepresented.</p>
 <p>The limiting factor appears to the expressiveness of the feature vector using the ProtVec model. Furthermore, we used a cutoff of 25% alpha and/or beta content to define the fold classes. This means that the model will not perform well on protein sequences with minimal alpha or beta content.</p>
 <p>Alternative feature vectors can be easily explored by replacing the CalculateFeatures step with another method.</p>
 
@@ -12320,7 +12320,7 @@ weighted avg       0.78      0.77      0.77      1343
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Next-Step">Next Step<a class="anchor-link" href="#Next-Step">&#182;</a></h2><p>After you saved the classification model here, go back to the <a href="./0-Workflow.ipynb">0-Workflow.ipynb</a> to run the next step of the analysis.</p>
+<h2 id="Next-Step">Next Step<a class="anchor-link" href="#Next-Step">&#182;</a></h2><p>After you saved the classification model here, run the next step in the workflow <a href="./4-Predict.ipynb">4-Predict.ipynb</a> or go back go back to <a href="./0-Workflow.ipynb">0-Workflow.ipynb</a>.</p>
 
 </div>
 </div>
@@ -12330,7 +12330,7 @@ weighted avg       0.78      0.77      0.77      1343
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Authors:</strong> Peter W. Rose, Shih-Cheng Huang, UC San Diego, October 1, 2018</p>
+<p><strong>Authors:</strong> <a href="mailto:pwrose.ucsd@gmail.com">Peter W. Rose</a>, Shih-Cheng Huang, UC San Diego, October 1, 2018</p>
 <hr>
 
 </div>
