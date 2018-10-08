@@ -6,5 +6,5 @@ pyvolve==0.8.8
 scikit-learn==0.20.0
 seaborn==0.9.0
 treesap==1.0.8
-treeswift==1.0.96
+treeswift==1.0.97
 watermark==1.6.1
