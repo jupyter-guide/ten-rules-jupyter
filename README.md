@@ -2,7 +2,7 @@
 [![Build Status](https://api.travis-ci.com/jupyter-guide/ten-rules-jupyter.svg?branch=master)](https://www.travis-ci.org/jupyter-guide/ten-rules-jupyter)
 [![GitHub License](https://img.shields.io/github/license/jupyter-guide/ten-rules-jupyter.svg)](https://github.com/sbl-sdsc/mmtf-spark/blob/master/LICENSE)
 
-This repository is a supplement to the "Ten Simple Rules for Reproducible Research in Jupyter Notebook" paper [ref].
+This repository is a supplement to the ["Ten Simple Rules for Reproducible Research in Jupyter Notebook"](https://arxiv.org/abs/1810.08055) paper.
 
 The example notebooks demonstrate some of rules. 
 
