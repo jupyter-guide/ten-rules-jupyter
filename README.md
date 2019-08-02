@@ -1,10 +1,16 @@
-# Ten Simple Rules for Reproducible Research in Jupyter Notebooks
+# Ten Simple Rules for Writing and Sharing Computational Analyses in Jupyter Notebooks
 [![Build Status](https://api.travis-ci.com/jupyter-guide/ten-rules-jupyter.svg?branch=master)](https://www.travis-ci.org/jupyter-guide/ten-rules-jupyter)
 [![GitHub License](https://img.shields.io/github/license/jupyter-guide/ten-rules-jupyter.svg)](https://github.com/sbl-sdsc/mmtf-spark/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/badge/Tweet--lightgrey.svg?logo=twitter&style=social)](https://twitter.com/peterwrose/status/1053156027602878465)
 [![Tweets](https://img.shields.io/badge/dynamic/json.svg?url=https://api.altmetric.com/v1/id/49908150&label=Tweets&query=$.cited_by_tweeters_count&style=social)](https://www.altmetric.com/details/49908150)  
 
-This repository is a supplement to the ["Ten Simple Rules for Reproducible Research in Jupyter Notebook"](https://arxiv.org/abs/1810.08055) paper. [![Tweets](https://img.shields.io/badge/dynamic/json.svg?url=https://api.altmetric.com/v1/id/49908150&label=Altmetric&query=$.score&style=social)](https://www.altmetric.com/details/49908150)
+This repository is a supplement to
+
+["Ten Simple Rules for Writing and Sharing Computational Analyses in Jupyter Notebooks"](https://doi.org/10.1371/journal.pcbi.1007007)
+
+and its preprint
+
+["Ten Simple Rules for Reproducible Research in Jupyter Notebook"](https://arxiv.org/abs/1810.08055) [![Tweets](https://img.shields.io/badge/dynamic/json.svg?url=https://api.altmetric.com/v1/id/49908150&label=Altmetric&query=$.score&style=social)](https://www.altmetric.com/details/49908150)
 
 
 
