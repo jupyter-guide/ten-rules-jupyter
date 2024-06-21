@@ -1,5 +1,6 @@
 biopython==1.83
 ipywidgets==8.1.3
+joblib==1.4.2
 matplotlib==3.9.0
 numpy==1.26.4
 pandas==2.2.2
