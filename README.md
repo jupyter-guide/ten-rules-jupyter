@@ -104,7 +104,7 @@ conda deactivate
 
 ------
 
-> To remove the CONDA environment, run ```conda env remove -n notebooks-sharing```
+> To remove the CONDA environment, run ```conda env remove -n ten-rules-jupyter```
 ------
 
 ## Citation
