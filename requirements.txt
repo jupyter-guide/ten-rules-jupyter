@@ -1,7 +1,7 @@
 biopython==1.83
 ipywidgets==7.4.0
 matplotlib==3.0.0
-numpy==2.0.0
+numpy==1.26.4
 pandas==2.2.2
 Pyvolve==1.1.0
 scikit-learn==0.20.0
