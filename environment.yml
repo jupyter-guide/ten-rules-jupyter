@@ -1,0 +1,21 @@
+name: ten-rules-jupyter 
+
+channels:
+  - conda-forge
+  - anaconda
+
+dependencies:
+  - python=3.11
+  - ipywidgets=8.0.6
+  - joblib=1.2.0
+  - jupyterlab=4.2.2
+  - pandas=2.0.2
+  - matplotlib=3.7.1
+  - seaborn=0.9.0
+  - scikit-learn=1.4.2
+  - watermark==1.6.1
+  - pip
+  - pip:
+    - Pyvolve==1.1.0 
+    - treesap==1.0.8
+    - treeswift==1.0.97
